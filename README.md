@@ -34,7 +34,7 @@ The app is designed to eventually integrate with a humanoid robot for enhanced a
 
 - **Key Functions**:  
   Two primary functions in **`functions.py`** handle response generation:  
-  - **`generate_text()`**: Retrieves the most relevant document based on the user query.  
+  - **response_text()`**: Retrieves the most relevant document based on the user query.  
   - **`gen()`**: Processes the extracted information and formulates a precise, context-aware answer.  
 
 ### **2. Iterative Context Feeding**  
