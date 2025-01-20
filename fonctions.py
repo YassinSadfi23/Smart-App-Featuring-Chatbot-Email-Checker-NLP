@@ -19,7 +19,7 @@ import threading
 from langchain.schema import Document
 from prompt import react_system_prompt
 
-client = Groq(api_key="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")
+client = Groq(api_key="YOUR_API_KEY")
 # Text-to-Speech (TTS) Thread
 class SpeakThread(QThread):
     stop_signal = Signal()
@@ -179,21 +179,6 @@ class Fonctions(QThread):
         # Listen thread      
         self.stop_event = threading.Event()
 
-    '''def generate_response(self):
-        input_text = self.widget.ui.lineEdit.text()
-        print("generate_response called with input:", input_text)  # Debug statement
-
-        try:
-            response = ollama.chat(
-                model='gemma:2b',
-                messages=[{'role': 'user', 'content': input_text}]
-            )
-            message_content = response['message']['content']
-            #print("Response received:", message_content)  # Debug statement
-            self.widget.ui.plainTextEdit.setPlainText(message_content)
-        except Exception as e:
-            print("Error in generate_response:", e)  # Debug statement'''
-
 
     def response_text(self):
         query = self.widget.ui.lineEdit.text()
@@ -270,6 +255,8 @@ class Fonctions(QThread):
         except Exception as e:
             print("Error in generate_response:", e)  # Debug statement
             return None
+    
+    
     def gen_email_response(self, input_text):
         try:
             chat_completion = client.chat.completions.create(
