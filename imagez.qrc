@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagez.qrc</file>
+        <file>iamgez/dashboard.png</file>
+        <file>iamgez/dashboard_white.png</file>
+        <file>iamgez/image.png</file>
+        <file>iamgez/log_out.png</file>
+        <file>iamgez/log_out_white.png</file>
+        <file>iamgez/menu.png</file>
+        <file>iamgez/messages.png</file>
+        <file>iamgez/profile.png</file>
+        <file>iamgez/search.png</file>
+        <file>iamgez/settings.png</file>
+        <file>iamgez/profile2.0.JPG</file>
+        <file>iamgez/profileee-fotor-bg-remover-20240524112942.png</file>
+        <file>iamgez/profile_white.png</file>
+        <file>iamgez/notifications_white.png</file>
+        <file>iamgez/settings_white.png</file>
+        <file>iamgez/profile_pic.png</file>
+        <file>iamgez/notifications.png</file>
+        <file>iamgez/profile2_0_1.png</file>
+        <file>iamgez/dr.jpg</file>
+        <file>iamgez/bgg.avif</file>
+        <file>iamgez/micro.png</file>
+        <file>iamgez/stop.jpg</file>
+        <file>iamgez/train.png</file>
+        <file>iamgez/unnamed.png</file>
+        <file>iamgez/upload.png</file>
+        <file>iamgez/mailgen-removebg-preview.png</file>
+        <file>iamgez/emailgen.png</file>
+        <file>iamgez/emailgen-removebg-preview.png</file>
+        <file>iamgez/png-mail-email-address-round-outline-white-icon-701751695035072jqljrsfzsm.png</file>
+        <file>iamgez/1000_F_195075949_QsG9tAFj2UlZTqBLfoppKu4WBZ7atSh9-removebg-preview.png</file>
+        <file>iamgez/chatbot.png</file>
+        <file>iamgez/chatbotNB.png</file>
+        <file>iamgez/email (1).png</file>
+        <file>iamgez/email.png</file>
+        <file>iamgez/image.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Train Window</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagez.qrc">
+    <normaloff>:/iamgez/settings.png</normaloff>:/iamgez/settings.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #7CF5FF; /* Light blue background */
+    border: 2px solid #00CCDD; /* Border around the window */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding around the content */
+}
+
+QWidget {
+    background-color: #FFFFFF; /* White background for child widgets */
+    border: none; /* No border for inner widgets */
+}
+
+QLabel {
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: #4F75FF; /* Solid background color */
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 5px; /* Padding */
+    border-radius: 6px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+
+QPushButton {
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: #00CCDD; /* Button background */
+    border: 2px solid #4F75FF; /* Button border */
+    padding: 8px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: #4F75FF; /* Background on hover */
+    border: 2px solid #6439FF; /* Border color on hover */
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Documents:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Preferred</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>140</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="uploadBtn">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset theme="modem" resource="imagez.qrc">
+         <normaloff>:/iamgez/upload.png</normaloff>:/iamgez/upload.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="3">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    color: rgb(0, 0, 0); /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: ; /* Background color */
+	color: rgb(0, 0, 0);
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 3px; /* Padding inside the line edit */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6439FF; /* Change border color on focus */
+   
+    selection-background-color: #00CCDD; /* Selection color */
+    selection-color: rgb(0, 0, 0); /* Text color during selection */
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>29</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="2">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Minimum</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>50</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="trainB">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);
+font: 700 10pt &quot;Segoe UI&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Start training</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="5">
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;Segoe Print&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(255, 216, 212);
+background-color: transparent;
+border: 2px solid #00CCDD; /* Border color */</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="5">
+      <widget class="QProgressBar" name="progressBar">
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid #00CCDD; /* Border around the progress bar */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text in the progress bar */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    background-color: #4F75FF; /* Background color when the bar is empty */
+}
+
+QProgressBar::chunk {
+    background-color: #7CF5FF; /* Color of the progress bar chunk */
+    border-radius: 8px; /* Rounded corners on the progress chunk */
+    width: 20px; /* Width of each chunk */
+}
+</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="imagez.qrc"/>
+  <include location="imagez.qrc"/>
+ </resources>
+ <connections/>
+</ui>

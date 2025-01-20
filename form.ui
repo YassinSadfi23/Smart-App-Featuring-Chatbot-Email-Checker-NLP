@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>841</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Smart App</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagez.qrc">
+    <normaloff>:/iamgez/train.png</normaloff>:/iamgez/train.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="1">
+    <widget class="QWidget" name="icon_name" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background-color:#00CCDD;
+	color: rgb(255, 255, 255);
+}
+QPushButton{
+	color:white;
+	text-align:left;
+	height: 30px;
+border:none;
+padding-left:10px;
+
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+
+}
+QPushButton:checked{
+	
+	background-color: rgb(245, 250, 254);	
+	color: rgb(31, 149, 239);
+	font-weight:bold;
+
+}
+
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="rightMargin">
+         <number>50</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset theme="applications-office" resource="imagez.qrc">
+            <normaloff>:/iamgez/profile2_0_1.png</normaloff>:/iamgez/profile2_0_1.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Yassin Sadfi</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>15</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="homeBtn">
+          <property name="text">
+           <string>Home</string>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/dashboard_white.png</normaloff>
+            <normalon>:/iamgez/dashboard.png</normalon>:/iamgez/dashboard_white.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="chatBtn">
+          <property name="text">
+           <string>ChatBot</string>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/image.jpg</normaloff>
+            <normalon>:/iamgez/chatbot.png</normalon>:/iamgez/image.jpg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="emailBtn">
+          <property name="text">
+           <string>Email checking</string>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/email.png</normaloff>
+            <normalon>:/iamgez/email (1).png</normalon>:/iamgez/email.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="text">
+           <string>Settings</string>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/settings_white.png</normaloff>
+            <normalon>:/iamgez/settings.png</normalon>:/iamgez/settings_white.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>200</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="text">
+           <string>Log out</string>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/log_out_white.png</normaloff>:/iamgez/log_out_white.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QWidget" name="main_menu" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="menuBtn">
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imagez.qrc">
+             <normaloff>:/iamgez/menu.png</normaloff>:/iamgez/menu.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>173</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit {
+    color: rgb(0, 0, 0); /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: ; /* Background color */
+	color: rgb(255, 255, 255);
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 3px; /* Padding inside the line edit */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6439FF; /* Change border color on focus */
+    background-color: #7CF5FF; /* Lighter background color on focus */
+    selection-background-color: #00CCDD; /* Selection color */
+    selection-color: white; /* Text color during selection */
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="imagez.qrc">
+               <normaloff>:/iamgez/search.png</normaloff>:/iamgez/search.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>173</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="styleSheet">
+            <string notr="true">border:none</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imagez.qrc">
+             <normaloff>:/iamgez/image.png</normaloff>:/iamgez/image.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="home">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    color: white; /* White text color */
+    font-size: 24px; /* Increased font size for a welcoming feel */
+    font-weight: bold; /* Bold text */
+    background-color: #4F75FF; /* Solid background color */
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 15px; /* Increased padding for a larger look */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    qproperty-alignment: 'AlignCenter'; /* Vertically align the text */
+    letter-spacing: 1px; /* Slightly spaced out letters */
+}
+
+QLabel:disabled {
+    color: #6c757d; /* Grey text when disabled */
+    background-color: #f0f2f5; /* Light grey background when disabled */
+    border: 1px solid #6c757d; /* Grey border when disabled */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Tahoma','sans-serif'; font-size:36pt; color:#ffffff; background-color:#4f75ff;&quot;&gt;Welcome to Our &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Tahoma','sans-serif'; font-size:26pt; text-decoration: underline; color:#00ccdd;&quot;&gt;Humanoid Robot Demo App&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Segoe UI','Tahoma','sans-serif'; font-size:9pt; font-weight:400; color:#ffcfc6;&quot;&gt;By Yassin Sadfi &amp;amp; Wassim Belhouwene&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="imagez.qrc">
+              <normaloff>:/iamgez/chatbot.png</normaloff>:/iamgez/chatbot.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>200</width>
+              <height>160</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="imagez.qrc">
+              <normaloff>:/iamgez/email (1).png</normaloff>:/iamgez/email (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>200</width>
+              <height>160</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="chatbot">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="8" column="4">
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>150</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="5">
+             <widget class="QToolButton" name="microBtn">
+              <property name="styleSheet">
+               <string notr="true">QToolButton#microBtn {
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #00CCDD, 
+        stop:0.4 #7CF5FF, 
+        stop:1 #6439FF
+    ); /* Conical gradient background */
+    border: 2px dashed #6439FF;
+    padding: 6px; /* Padding for space */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: inline-block; /* Inline-block for proper alignment */
+}
+
+QToolButton#microBtn:hover {
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #6439FF, 
+        stop:0.4 #4F75FF, 
+        stop:1 #00CCDD
+    ); /* Reversed conical gradient on hover */
+    border: 2px solid #4F75FF; /* Hover border color */
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="imagez.qrc">
+                <normaloff>:/iamgez/micro.png</normaloff>:/iamgez/micro.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QPushButton" name="trainBtn">
+              <property name="styleSheet">
+               <string notr="true">QPushButton#trainBtn {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #7CF5FF, 
+        stop:0.33 #00CCDD, 
+        stop:0.66 #4F75FF, 
+        stop:1 #6439FF
+    );
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid #4F75FF;
+    font-weight: bold;
+}
+
+QPushButton#trainBtn:hover {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #6439FF, 
+        stop:0.33 #4F75FF, 
+        stop:0.66 #00CCDD, 
+        stop:1 #7CF5FF
+    );
+    color: white;
+    border: 3px solid #6439FF;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Train your model</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/images/train.png</normaloff>:/images/train.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0" colspan="6">
+             <widget class="QPlainTextEdit" name="plainTextEdit">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Rockwell&quot;;</string>
+              </property>
+              <property name="plainText">
+               <string/>
+              </property>
+              <property name="placeholderText">
+               <string>Generate response..</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="6">
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <pointsize>-1</pointsize>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+    color: rgb(255, 255, 255); /* White text color */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #7CF5FF, 
+        stop:0.5 #00CCDD, 
+        stop:1 #4F75FF
+    ); /* Gradient background */
+    border: 2px solid #6439FF; /* Purple border */
+    padding: 3px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+
+QLabel:disabled {
+    color: #6c757d; /* Grey text when disabled */
+    background-color: #f0f2f5; /* Light grey background when disabled */
+    border: 1px solid #6c757d; /* Grey border when disabled */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>                                Chat bot</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="5">
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+    color: rgb(0, 0, 0); /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: ; /* Background color */
+	color: rgb(0, 0, 0);
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 3px; /* Padding inside the line edit */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6439FF; /* Change border color on focus */
+   
+    selection-background-color: #00CCDD; /* Selection color */
+    selection-color: rgb(0, 0, 0); /* Text color during selection */
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="placeholderText">
+               <string>How can I help you ?</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                <horstretch>2</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#pushButton, QPushButton#trainBtn {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #7CF5FF, 
+        stop:0.33 #00CCDD, 
+        stop:0.66 #4F75FF, 
+        stop:1 #6439FF
+    );
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 16px;
+    border: 2px solid #4F75FF;
+}
+
+QPushButton#pushButton:hover, QPushButton#trainBtn:hover {
+    background-color: qlineargradient(
+        spread:pad, 
+        x1:0, y1:0, x2:1, y2:1, 
+        stop:0 #6439FF, 
+        stop:0.33 #4F75FF, 
+        stop:0.66 #00CCDD, 
+        stop:1 #7CF5FF
+    );
+    color: white;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Generate</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="email">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="3" column="0">
+             <widget class="QPushButton" name="mailgenBtn">
+              <property name="styleSheet">
+               <string notr="true">QPushButton#mailgenBtn {
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #00CCDD, 
+        stop:0.4 #7CF5FF, 
+        stop:1 #6439FF
+    ); /* Conical gradient background */
+    border: 2px dashed #6439FF; /* Dashed border */
+    padding: 1px; /* Padding for space */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+}
+
+QPushButton#mailgenBtn:hover {
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #6439FF, 
+        stop:0.4 #4F75FF, 
+        stop:1 #00CCDD
+    ); /* Reversed conical gradient on hover */
+    border: 2px dashed #4F75FF; /* Hover border color */
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="imagez.qrc">
+                <normaloff>:/iamgez/1000_F_195075949_QsG9tAFj2UlZTqBLfoppKu4WBZ7atSh9-removebg-preview.png</normaloff>:/iamgez/1000_F_195075949_QsG9tAFj2UlZTqBLfoppKu4WBZ7atSh9-removebg-preview.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0" colspan="6">
+             <widget class="QPlainTextEdit" name="plainTextEdit2">
+              <property name="styleSheet">
+               <string notr="true">font: 600 11pt &quot;Segoe UI Semibold&quot;;
+ border: 2px solid #6439FF; /* Dashed border for a different style */
+selection-background-color: #00CCDD; /* Selection color */</string>
+              </property>
+              <property name="placeholderText">
+               <string>Your email generated</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::MinimumExpanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="1" colspan="5">
+             <widget class="QLineEdit" name="mdpE">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>10</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+    color: rgb(0, 0, 0); /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: ; /* Background color */
+	color: rgb(0, 0, 0);
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 3px; /* Padding inside the line edit */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6439FF; /* Change border color on focus */
+   
+    selection-background-color: #00CCDD; /* Selection color */
+    selection-color: rgb(0, 0, 0); /* Text color during selection */
+}
+</string>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+              <property name="placeholderText">
+               <string>password</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1" colspan="3">
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="5">
+             <widget class="QToolButton" name="toolButton">
+              <property name="styleSheet">
+               <string notr="true">QToolButton#toolButton {
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #00CCDD, 
+        stop:0.4 #7CF5FF, 
+        stop:1 #6439FF
+    ); /* Conical gradient background */
+    border: 2px dashed #6439FF;
+    padding: 3px; /* Padding for space */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: inline-block; /* Inline-block for proper alignment */
+}
+
+QToolButton#toolButton:hover {
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #6439FF, 
+        stop:0.4 #4F75FF, 
+        stop:1 #00CCDD
+    ); /* Reversed conical gradient on hover */
+    border: 2px solid #4F75FF; /* Hover border color */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset resource="imagez.qrc">
+                <normaloff>:/iamgez/unnamed.png</normaloff>:/iamgez/unnamed.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Email adress :</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="5">
+             <widget class="QLineEdit" name="mailE">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit {
+    color: rgb(0, 0, 0); /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: ; /* Background color */
+	color: rgb(0, 0, 0);
+    border: 2px solid #00CCDD; /* Border color */
+    padding: 3px; /* Padding inside the line edit */
+    border-radius: 10px; /* Rounded corners */
+}
+
+QLineEdit:focus {
+    border: 2px solid #6439FF; /* Change border color on focus */
+   
+    selection-background-color: #00CCDD; /* Selection color */
+    selection-color: rgb(0, 0, 0); /* Text color during selection */
+}
+</string>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="placeholderText">
+               <string>mail</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2" colspan="2">
+             <widget class="QPushButton" name="checkBtn">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#checkBtn {
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #00CCDD, 
+        stop:0.4 #7CF5FF, 
+        stop:1 #6439FF
+    ); /* Conical gradient background */
+    border: 2px solid #6439FF; /* Solid border */
+    padding: 3px; /* Padding for space */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: inline-block; /* Inline-block for proper alignment */
+}
+
+QPushButton#checkBtn:hover {
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #6439FF, 
+        stop:0.4 #4F75FF, 
+        stop:1 #00CCDD
+    ); /* Reversed conical gradient on hover */
+    border: 2px solid #4F75FF; /* Hover border color */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Check</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="6">
+             <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <pointsize>-1</pointsize>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="whatsThis">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+    color: white; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    background-color: qconicalgradient(
+        cx:0.5, cy:0.5, angle:0, 
+        stop:0 #00CCDD, 
+        stop:0.4 #7CF5FF, 
+        stop:1 #6439FF
+    ); /* Conical gradient background for uniqueness */
+    border: 2px solid #6439FF; /* Dashed border for a different style */
+    padding: 5px; /* Increased padding for more space */
+    border-radius: 15px; /* Larger, rounded corners */
+    text-align: center; /* Center text horizontally */
+}
+
+QLabel:disabled {
+    color: #6c757d; /* Grey text when disabled */
+    background-color: #f0f2f5; /* Light grey background when disabled */
+    border: 1px solid #6c757d; /* Grey border when disabled */
+}
+</string>
+              </property>
+              <property name="text">
+               <string>                             Email Checker</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>Password :</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="0" colspan="6">
+             <widget class="QTableView" name="emailTable">
+              <property name="styleSheet">
+               <string notr="true">font: 700 11pt &quot;Tahoma&quot;;
+ border: 2px solid #6439FF; /* Dashed border for a different style */
+selection-background-color: #00CCDD; /* Selection color */</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QWidget" name="icon_name_2" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background-color: #00CCDD;
+}
+QPushButton{
+		color:white;
+	height: 30px;
+	border:none;
+border-radius:10px
+	
+}
+QPushButton:checked{
+	
+	background-color: rgb(245, 250, 254);	
+	color: rgb(31, 149, 239);
+	font-weight:bold;
+
+}
+
+</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="whatsThis">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">text-align:right;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/profile2_0_1.png</normaloff>:/iamgez/profile2_0_1.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <property name="topMargin">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="homeBtn1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/dashboard_white.png</normaloff>
+            <normalon>:/iamgez/dashboard.png</normalon>:/iamgez/dashboard_white.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="chatBtn1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/image.jpg</normaloff>
+            <normalon>:/iamgez/chatbot.png</normalon>:/iamgez/image.jpg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="emailBtn1">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/email.png</normaloff>
+            <normalon>:/iamgez/email (1).png</normalon>:/iamgez/email.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_17">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/settings_white.png</normaloff>
+            <normalon>:/iamgez/settings.png</normalon>:/iamgez/settings_white.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>200</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_18">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagez.qrc">
+            <normaloff>:/iamgez/log_out_white.png</normaloff>
+            <normalon>:/iamgez/log_out.png</normalon>:/iamgez/log_out_white.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="imagez.qrc"/>
+  <include location="imagez.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>menuBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name_2</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>18</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menuBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>372</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_9</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>28</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>emailBtn1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>emailBtn</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>25</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chatBtn1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>chatBtn</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>27</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>homeBtn1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>homeBtn</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>homeBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>homeBtn1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chatBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>chatBtn1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>17</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>emailBtn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>emailBtn1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>pushButton_17</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>25</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>467</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>87</x>
+     <y>546</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

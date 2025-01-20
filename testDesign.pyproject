@@ -1,0 +1,13 @@
+{
+    "files": [
+        "widget.py",
+        "form.ui",
+        "imagez.qrc",
+        "ui_form.py",
+        "rc_imagez.py",
+        "fonctions.py",
+        "ui_trainwindow.py",
+        "trainwindow.ui",
+        "prompt.py"
+    ]
+}
